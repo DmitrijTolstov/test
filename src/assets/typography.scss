@@ -1,0 +1,73 @@
+@import '@/assets/vars';
+
+body {
+	font-size: $main-font;
+	font-family: 'Sans';
+	color: $color-font-main;
+}
+
+.container {
+	max-width: 1460px;
+	padding-inline: 10px;
+	margin: 0 auto;
+}
+
+input {
+	border: 1px solid $color-border;
+	transition: all .6s linear;
+
+	&:focus {
+		border-color: $color-brand;
+	}
+}
+
+input[type="search"] {
+	width: 100%;
+
+	&::-webkit-search-cancel-button {
+		-webkit-appearance: none;
+		height: 24px;
+		width: 24px;
+		background: url(@/assets/images/icons/close-circle.svg) no-repeat 50% 50%;
+		background-size: contain;
+		opacity: 1;
+		pointer-events: none;
+	}
+}
+
+input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	width: 20px;
+	height: 20px;
+
+	&+label {
+		display: inline-flex;
+		align-items: center;
+		user-select: none;
+	}
+
+	&+label::before {
+		content: '';
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 1px solid $color-border;
+		border-radius: 3px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 50% 50%;
+		margin-inline-end: 12px;
+	}
+
+	&:checked+label::before {
+		border-color: $color-brand;
+		background-color: $color-brand;
+		background-image: url(@/assets/images/icons/check.svg);
+	}
+
+	&:hover+label::before {
+		border-color: $color-brand;
+	}
+
+}

@@ -1,6 +1,6 @@
 <script>
 import Button from './UIComponents/Button.vue';
-import MobileSearchInput from './MobileSearchInput.vue';
+import MobileSearchInput from './UIComponents/MobileSearchInput.vue';
 import SearchInput from './UIComponents/SearchInput.vue';
 
 
@@ -32,7 +32,7 @@ export default {
 				</li>
 			</ul>
 		</nav>
-		<MobileSearchInput class='mobile' />
+		<MobileSearchInput @mobileInputValue='(value) => $emit("mobileInputValue", value)' class='mobile' />
 	</header>
 </template>
 <style scoped lang='scss'>

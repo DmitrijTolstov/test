@@ -1,8 +1,8 @@
 <script>
-import FiltterSize from './FiltterSize.vue';
-import BrandFilter from './UIComponents/BrandFilter.vue';
-import CategoryFilter from './UIComponents/categoryFilter.vue';
-import FilterPrice from './UIComponents/FilterPrice.vue';
+import FiltterSize from './FiltersComponents/FiltterSize.vue';
+import BrandFilter from './FiltersComponents/BrandFilter.vue';
+import CategoryFilter from './FiltersComponents/categoryFilter.vue';
+import FilterPrice from './FiltersComponents/FilterPrice.vue';
 
 
 export default {

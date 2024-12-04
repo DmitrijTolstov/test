@@ -1,77 +1,79 @@
 <script>
-import CheckboxContainer from '../CheckboxContainer.vue';
-import FilterSearchInpit from './FilterSearchInpit.vue';
-import FiltersHeader from './FiltersHeader.vue';
-
+import CheckboxContainer from '@/components/UIComponents/CheckboxContainer.vue';
 
 export default {
-	name: 'brandFilter',
+	name: 'filterSize',
 	components: {
-		FilterSearchInpit,
-		CheckboxContainer,
-		FiltersHeader
+		CheckboxContainer
 	},
 	data() {
 		return {
-			brand: [
+			size: [
 				{
-					id: 10,
+					id: 1,
 					name: 'Атрибут',
 					count: 3
 				},
 				{
-					id: 11,
+					id: 2,
 					name: 'Атрибут',
 					count: 3
 				},
 				{
-					id: 12,
+					id: 3,
 					name: 'Атрибут',
 					count: 3
 				},
 				{
-					id: 13,
+					id: 4,
 					name: 'Атрибут',
 					count: 3
 				},
 				{
-					id: 14,
+					id: 5,
 					name: 'Атрибут',
 					count: 3
 				},
 				{
-					id: 15,
+					id: 6,
 					name: 'Атрибут',
 					count: 3
 				},
 				{
-					id: 16,
+					id: 7,
 					name: 'Атрибут',
 					count: 3
 				},
 				{
-					id: 17,
+					id: 8,
 					name: 'Атрибут',
 					count: 3
 				},
 				{
-					id: 18,
+					id: 9,
 					name: 'Атрибут',
 					count: 3
 				},
 			]
 		}
 	},
-
 }
 </script>
 <template>
-	<div class="brandFilter">
-		<FiltersHeader :title='"Бренд"' />
-		<FilterSearchInpit />
-		<CheckboxContainer :array='brand' />
+	<div class="filterSize">
+		<h3 class="filterSize_title">Размер</h3>
+		<CheckboxContainer :array='size' />
 	</div>
 </template>
 <style scoped lang='scss'>
-@import '@/assets/vars';
+.filterSize {
+	margin-block-start: 31px;
+
+	&_title {
+		font-size: 16px;
+		text-align: center;
+		font-weight: 700;
+	}
+
+}
 </style>

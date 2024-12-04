@@ -1,6 +1,6 @@
 <script>
 
-import SliderFilter from './SliderFilter.vue'
+import SliderFilter from '@/components/UIComponents/SliderFilter.vue'
 
 export default {
 	name: 'filterPrice',

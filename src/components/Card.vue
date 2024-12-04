@@ -141,16 +141,9 @@ export default {
 		width: 75px;
 
 		&__availability {
-			border-color: $color-border !important;
+			border-color: $color-border ;
 			color: $color-font-second !important;
 		}
-	}
-}
-
-
-@media(max-width:375px) {
-	.card {
-		width: calc(100% / 2);
 	}
 }
 </style>
